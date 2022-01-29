@@ -1,6 +1,10 @@
 {
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.2",
