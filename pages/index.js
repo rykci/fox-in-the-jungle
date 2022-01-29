@@ -10,7 +10,7 @@ export default function Home() {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io(`http://localhost:5000`);
+    const newSocket = io(`https://fox-jungle.herokuapp.com/`);
     setSocket(newSocket);
 
     newSocket.on("room full", (data) => {
