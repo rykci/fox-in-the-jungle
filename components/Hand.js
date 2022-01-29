@@ -16,7 +16,7 @@ export default function Hand({ effectActive, playCard, discardCard, cards }) {
         {cards.map((card, index) => (
           <div
             key={card.value + card.suit}
-            className="hover:-translate-y-1/4"
+            className="hover:-translate-y-1/4 cursor-pointer"
             onClick={() => handleClick(card, index)}
           >
             <Card card={card} />

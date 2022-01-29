@@ -120,6 +120,14 @@ export default function Room({ socket, room }) {
 
       {gameState ? (
         <div className="flex flex-col min-h-[50vh] justify-around">
+          <div className="flex flex-row justify-center text-center">
+            {gameState.graveyard.map((graveCard) => (
+              <div>
+                {graveCard.value}
+                {graveCard.suit},
+              </div>
+            ))}
+          </div>
           <div className="flex flex-row">
             <div className="font-semibold text-2xl pl-8">You</div>
             <div className="font-semibold text-2xl ml-auto pr-8">Opponent</div>
